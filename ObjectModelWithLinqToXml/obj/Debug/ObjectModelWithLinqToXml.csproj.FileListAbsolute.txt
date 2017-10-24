@@ -1,0 +1,6 @@
+c:\users\oleksii.remizov\documents\visual studio 2017\Projects\ObjectModelWithLinqToXml\ObjectModelWithLinqToXml\bin\Debug\ObjectModelWithLinqToXml.exe.config
+c:\users\oleksii.remizov\documents\visual studio 2017\Projects\ObjectModelWithLinqToXml\ObjectModelWithLinqToXml\bin\Debug\ObjectModelWithLinqToXml.exe
+c:\users\oleksii.remizov\documents\visual studio 2017\Projects\ObjectModelWithLinqToXml\ObjectModelWithLinqToXml\bin\Debug\ObjectModelWithLinqToXml.pdb
+c:\users\oleksii.remizov\documents\visual studio 2017\Projects\ObjectModelWithLinqToXml\ObjectModelWithLinqToXml\obj\Debug\ObjectModelWithLinqToXml.csprojResolveAssemblyReference.cache
+c:\users\oleksii.remizov\documents\visual studio 2017\Projects\ObjectModelWithLinqToXml\ObjectModelWithLinqToXml\obj\Debug\ObjectModelWithLinqToXml.exe
+c:\users\oleksii.remizov\documents\visual studio 2017\Projects\ObjectModelWithLinqToXml\ObjectModelWithLinqToXml\obj\Debug\ObjectModelWithLinqToXml.pdb
