@@ -12,48 +12,19 @@ namespace ObjectModelWithLinqToXml
 {
     public class Program
     {
+        /*public static string curFilePath = ConfigurationManager.AppSettings[@"Path"];
+
+        //public string filePath = (Path.GetDirectoryName(System.AppDomain.CurrentDomain.BaseDirectory)) + curFilePath;
+
+        public XDocument xDoc = XDocument.Load(Path.GetDirectoryName(System.AppDomain.CurrentDomain.BaseDirectory) + curFilePath);
+
+    */
         public static void Main(string[] args)
         {
-            var curFilePath = ConfigurationManager.AppSettings[@"Path"];
-            var filePath = (Path.GetDirectoryName(System.AppDomain.CurrentDomain.BaseDirectory))+curFilePath;
 
-            XDocument xDoc = XDocument.Load(@filePath);
-
-            var customersInfo = new Customer();
-            var results = customersInfo.ShowAllInfoAboutCustomers(filePath);
-            foreach (var result in results)
-            {
-                Console.WriteLine(result);
-            }
-
-            var custs = customersInfo.ShowCustomersByID(xDoc, "GREAL");
-            foreach (var cuat in custs)
-            {
-                Console.WriteLine((string)cuat.Value);
-            }
-
-            var phones = customersInfo.ShowCustomersByPhone(xDoc, "(415) 555-5938");
-            foreach (var phone in phones)
-            {
-                Console.WriteLine((string)phone.Value);
-            }
-
-
-            var showAll = customersInfo.ShowAllCustomers(xDoc);
-            foreach (var show in showAll)
-            {
-                Console.WriteLine("New item: {0}",(string)show.Value);
-            }
-
-            Order orders = new Order();
-            var showOrdersByCustomerID = orders.ShowAllOrdersByCustomer(xDoc, "GREAL");
-            foreach (var showOrders in showOrdersByCustomerID)
-            {
-                Console.WriteLine("Order: {0}", (string)showOrders.Value);
-            }
-
-            Console.ReadKey();
-
+            DAL = new DAl(xmlpath);
+            List<Order> orders = DAL.ReadOrders();
+            customers = DAL.GetCustomers();
         }
     }
     

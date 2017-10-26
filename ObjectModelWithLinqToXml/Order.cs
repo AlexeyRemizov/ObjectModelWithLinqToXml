@@ -4,45 +4,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using ObjectModelWithLinqToXml;
 
-namespace ObjectModelWithLinqToXml
+namespace ObjectModel
 {
     public class Order
     {
-        public string CustomerID;
+        public string CustomerID;  //LETSS
 
-        public string EmployeeID;
+        public  string EmployeeID; 
 
-        public string OrderDate;
+        public DateTime OrderDate;
 
-        public string RequiredDate;
+        public DateTime RequiredDate;
 
-        public string ShippedDate;
+        public DateTime ShippedDate;
 
-        public string ShipVia;
+        public ShipInfo InfoShip;
+        
 
-        public string Freight;
-
-        public string ShipName;
-
-        public string ShipAddress;
-
-        public string ShipCity;
-
-        public string ShipRegion;
-
-        public string ShipPostalCode;
-
-        public string ShipCountry;
-
-        public IEnumerable<XElement> ShowAllOrdersByCustomer(XDocument xDoc, string customer)
+        public Order()
         {
-            XNamespace ns = "http://www.adventure-works.com";
-            var queryOrdersByCustomerID = from res in xDoc.Root.Element(ns + "Orders").Elements(ns+"Order")
-                           where (string)res.Element(ns+"CustomerID") == customer
-                           select res;
 
-            return queryOrdersByCustomerID;
         }
+
+       
+        
     }
 }
