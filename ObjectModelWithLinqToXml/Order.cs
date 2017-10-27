@@ -10,25 +10,20 @@ namespace ObjectModel
 {
     public class Order
     {
-        public string CustomerID;  //LETSS
+        public string CustomerID;  //LETSS //GREAL //HUNGC //LAZYK
 
-        public  string EmployeeID; 
+        public string EmployeeID;
 
         public DateTime OrderDate;
 
         public DateTime RequiredDate;
 
-        public DateTime ShippedDate;
-
         public ShipInfo InfoShip;
-        
 
-        public Order()
-        {
 
-        }
 
-       
-        
+
+
+
     }
 }

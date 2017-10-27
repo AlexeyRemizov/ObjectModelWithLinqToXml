@@ -46,6 +46,7 @@
     <Compile Include="BusinessLogic.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="DAL.cs" />
+    <Compile Include="FullAddress.cs" />
     <Compile Include="Order.cs" />
     <Compile Include="Paths.cs" />
     <Compile Include="Program.cs" />

@@ -17,14 +17,5 @@ namespace ObjectModel
         public readonly static XNamespace ns = "http://www.adventure-works.com";
 
         public static XDocument XDoc = XDocument.Load(CustomersAndOrders);
-
-
-        public static XDocument GetData()
-        {
-            string path = CustomersAndOrders;
-            XDocument xDoc = XDocument.Load(@path);
-            return xDoc;
-        }
-        
     }
 }

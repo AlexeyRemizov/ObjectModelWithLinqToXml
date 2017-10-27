@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace ObjectModelWithLinqToXml
+namespace ObjectModel
 {
     public class Customer
     {
@@ -18,17 +18,7 @@ namespace ObjectModelWithLinqToXml
         public string ContactTitle;
 
         public string Phone;
-
-        public string Address;
-
-        public string City;
-
-        public string Region;
-
-        public int PostalCode;
-
-        public string Country;
         
-
+        public FullAddress FullAddress;
     }
 }

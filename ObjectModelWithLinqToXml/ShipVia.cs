@@ -8,6 +8,8 @@ namespace ObjectModel
 {
     public class ShipInfo
     {
+        public DateTime ShippedDate;
+
         public int ShipVia;
 
         public double Freight;
@@ -23,10 +25,5 @@ namespace ObjectModel
         public int ShipPostalCode;
 
         public string ShipCountry;
-
-        public ShipInfo()
-        {
-            
-        }
     }
 }
